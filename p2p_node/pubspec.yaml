@@ -1,0 +1,26 @@
+name: p2p_node
+description: P2P NODE — encrypted peer-to-peer chat (Flutter port of tkinter GUI)
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2          # State management
+  nsd: ^2.0.0               # mDNS / Zeroconf (replaces Python zeroconf)
+  flutter_svg: ^2.0.9       # SVG icon rendering
+  intl: ^0.19.0             # Date/time formatting
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
